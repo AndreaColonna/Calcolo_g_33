@@ -4,7 +4,7 @@ Il valore di pressione viene mediato attarverso il valore statistico
 -->
 <phyphox version="1.7" locale="it">
 
-  <title>Pressione statistica da Arduino</title>
+  <title>Acc g statistica da Arduino</title>
   
   <category>Esperimenti con ARDUINO</category>
   
