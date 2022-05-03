@@ -40,7 +40,7 @@ Il valore di pressione viene mediato attarverso il valore statistico
   
   <input>
     <!-- Da arduino a phyphox BLE -->
-    <bluetooth name="Mobile" mode="notification" rate ="1" subscribeOnStart="false" id="Sense">
+    <bluetooth name="" mode="notification" rate ="1" subscribeOnStart="false" id="Sense">
       <output char="cddf1002-30f7-4671-8b43-5e40ba53514a" conversion="float32LittleEndian" offset="0">gx</output>
       <output char="cddf1002-30f7-4671-8b43-5e40ba53514a" conversion="float32LittleEndian" offset="4">gy</output>
       <output char="cddf1002-30f7-4671-8b43-5e40ba53514a" conversion="float32LittleEndian" offset="8">gz</output>
