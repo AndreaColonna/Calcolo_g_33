@@ -1,6 +1,6 @@
 <!-- Mostra il valore di g misurato dal sensore Arduino nano 33 BLE sense:
 in m/s^2.
-Il valore di pressione viene mediato attarverso il valore statistico
+Il valore di acc viene mediato attarverso il valore statistico
 -->
 <phyphox version="1.7" locale="it">
 
