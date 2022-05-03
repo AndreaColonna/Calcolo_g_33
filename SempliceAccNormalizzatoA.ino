@@ -1,42 +1,21 @@
-/* Misura dei valori di g 
-  Arduino LSM9DS1 - Simple Accelerometer
-
-  This example reads the acceleration values from the LSM9DS1
-  sensor and continuously prints them to the Serial Monitor
-  or Serial Plotter.
-
-  The circuit:
-  - Arduino Nano 33 BLE Sense
-
+/* Misura dei valori di g Arduino LSM9DS1 - Simple Accelerometer
   created 20 Apr 2022
   by Andrea Colonna
-
-  This example code is in the public domain.
 */
 #include <phyphoxBle.h>
 char board_name[] = "Mobile";
 #include <Arduino_LSM9DS1.h>  // library arduino IMU
 
 void setup() {
-//  Serial.begin(9600);
-//  while (!Serial);
-//  Serial.println("Started");
   pinMode(LED_BUILTIN,OUTPUT);
   
   if (!IMU.begin()) {
-    //Serial.println("Failed to initialize IMU!");
     digitalWrite(LED_BUILTIN,HIGH);
     while (1);
   }
 
- // Serial.print("Accelerometer sample rate = ");
-   PhyphoxBLE::start(board_name); // inizia il BLE Server
- 
-//  Serial.print(IMU.accelerationSampleRate());
-//  Serial.println(" Hz");
-//  Serial.println();
-//  Serial.println("Acceleration in G's");
-//  Serial.println("X\tY\tZ");
+   PhyphoxBLE::start(board_name); // inizia il BLE Server 
+
 }
 
 void loop() {
@@ -54,12 +33,5 @@ void loop() {
 
     PhyphoxBLE::write(gx,gy,gz,g);
     delay(50);
-   // Serial.print(x);
-   // Serial.print('\t');
-   // Serial.print(y);
-   // Serial.print('\t');
-   // Serial.print(z);
-   // Serial.print('\t');
-   // Serial.println(g);
   }
 }
