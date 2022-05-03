@@ -144,7 +144,7 @@ Il valore di pressione viene mediato attarverso il valore statistico
   <export>
     <set name="Accg_Arduino">
       <data name="tempo (s)">tempo</data>
-      <data name="pressione (m/s²)">g</data>
+      <data name="acc (m/s²)">g</data>
     </set>
     <set name="Statistica">
       <data name="Bin start (m/s²)">binStart</data>
